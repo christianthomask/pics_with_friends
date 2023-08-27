@@ -1,0 +1,9 @@
+{
+		"webDir":"build",
+		"appId":"pics_with_friends.ionic.io",
+		"appName":"pics_with_friends",
+		"_server": {
+		  "url": "http://192.168.0.20:5173/",
+		  "cleartext": true
+		}
+	}
