@@ -1,5 +1,6 @@
 <script>
 	import { setupIonicBase } from 'ionic-svelte';
+	import { roomCode } from "../Store"
 
 	/* Call Ionic's setup routine */
 	setupIonicBase();
@@ -41,8 +42,22 @@
 		Want to know what is happening more - follow me on Twitter - https://twitter.com/Tommertomm
 		Discord channel on Ionic server - https://discordapp.com/channels/520266681499779082/1049388501629681675
 	*/
+
+	let room
+	room = $roomCode;
+
 </script>
 
 <ion-app>
-	<slot />
+	<ion-header>
+		<ion-toolbar>
+		  <ion-title> Pictures with Friends! </ion-title>
+		</ion-toolbar>
+	  </ion-header>
+		<slot></slot>
+		<!-- <ion-footer>
+			<ion-toolbar>
+			  <ion-title>{room}</ion-title>
+			</ion-toolbar>
+		  </ion-footer> -->
 </ion-app>
